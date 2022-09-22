@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+
+<title>
+    Títilo da Página Olá!
+</title>
+</head>
+<body ><center>
+       <h1>Digite Um Número N1</h1>
+       <input id="n1" type="number">
+       <h1>Digite Um Número N2</h1>
+       <input id="n2" >
+       <button onclick="somar()">SOMAR</button>
+       <button onclick="subtrair()">SUBTRAIR</button>
+       <button id="bot">Vai Aparecer Aqui</button>
+    </center>
+       <script>
+        var n1 = document.querySelector('#n1')
+        var n2 = document.querySelector('#n2')
+        var resultado = document.querySelector('#bot')
+  function somar(){
+      resultado.innerHTML ="O Resultado é "
+       + parseFloat(n1.value)+
+      parseInt(n2.value)
+    }       
+    function subtrair(){
+      resultado.innerHTML ="O Resultado é "
+       + (parseFloat(n1.value)-
+      parseInt(n2.value))
+    } 
+        </script>
+</body>
+</html>
