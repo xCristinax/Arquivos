@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv=""/>
+<title>Atividade Tabela Salário</title>
+
+</head>
+<body>
+    
+    <table border="5">
+        <tr>
+            <th>Salário</th>
+            <th>Abono</th>
+            <th>Sal Novo</th>
+        </tr>
+        <tr>
+            <td>600,00</td>
+            <td>60,00</td>
+            <td>660,00</td>
+        </tr>
+        <tr>
+            <td><input id="a"><br/></td>
+            <td id="b"><br/></td>
+            <td ><span id="total"></span></td>
+        </tr>
+        <button onclick="calcular()">Calcular</button>
+
+<script>
+            var a = document.querySelector('#a')
+            var b = document.querySelector('#b')
+            var resultado = document.querySelector('#total')
+            // b tem que calcular e exibir para somar ao cálculo final (sal novo). Então utiliza-se var perc para calcular a porcentagem e innerHTML é para disponibilizar o valor ao resultado total.
+               
+            function calcular(){
+                var perc = parseFloat(a.value)*0.1
+                b.innerHTML = perc
+                var soma = perc+parseFloat(a.value)
+                resultado.innerHTML = soma
+                console.log(soma)
+              
+            }
+            
+</script>
+
+</body>
+
+</html>
