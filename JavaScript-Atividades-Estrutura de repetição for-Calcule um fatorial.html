@@ -1,0 +1,29 @@
+ <html>
+    <head>
+        <title>JavaScript-Atividades-Estrutura de repetição for-Calcule um fatorial</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+        var numero;        
+        numero = prompt ("Digite um número entre 2 e 100")
+
+        if (numero < 2 || numero >= 100)
+        {
+            alert("Valor '" + numero + "' está fora do range entre 2 e 100")
+        }
+        else
+        {
+            //alert('estou dentro do else');
+            for (var contador = numero ;contador >= 1; contador--)
+            {
+                //alert("estou dento do for");
+                numero = numero * contador;
+                document.write(contador + "<br/>");
+            }
+        }
+              
+
+        </script>
+    
+    </body>
+ </html>
